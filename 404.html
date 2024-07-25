@@ -1,9 +1,23 @@
+<!-- public/404.html -->
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL='/'" />
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      // JavaScript to redirect to the home page
+      (function() {
+        // Check if running on GitHub Pages
+        const redirectUrl = window.location.origin + '/';
+        if (window.location.pathname !== '/' && !window.location.pathname.includes('/aframe-dh')) {
+          window.location.replace(redirectUrl);
+        }
+      })();
+    </script>
   </head>
   <body>
-    <p>If you are not redirected automatically, follow this <a href="/">link to the homepage</a>.</p>
+    <!-- Optionally add a message here -->
+    <h1>Redirecting to the home page...</h1>
   </body>
 </html>
