@@ -3,12 +3,10 @@ import 'aframe'
 export const AFrameBody = ({myModel3D, bodyImg}) => {
   return (
     <a-scene>
-      {/* Assets */}
       <a-assets>
         <a-asset-item id="my-model" src={myModel3D}></a-asset-item>
       </a-assets>
       <a-sky src={bodyImg}></a-sky>
-      
       <a-entity
         gltf-model="#my-model"
         position="0 0 5"

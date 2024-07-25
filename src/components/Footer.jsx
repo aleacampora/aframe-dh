@@ -5,13 +5,17 @@ import { Button } from './Button';
 
 const Footer = () => {
 
+  //handle click for back to home
   const handleClickBackTooHP = useHandleClickBackToHP()
 
   return (
     <div className='footer'>
       <ul className="nav-links">
         <li className="nav-item">
-          <Button onClick={handleClickBackTooHP} message={'Home'}/>
+          <Button 
+            message={'Home'}
+            onClick={handleClickBackTooHP} 
+          />
         </li>
         <li className="nav-item">
           <Link to="/scene1" title='First Scene' className='link'>Scene One</Link>

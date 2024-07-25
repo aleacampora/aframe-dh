@@ -4,20 +4,18 @@ import useHandleClickBackToHP from '../assets/utils/backToHomePage'
 
 const PageNF = () => {
 
-  const errorStatus = 404
-  const message = "Page not found"
-
+  //handle click for back to home
   const handleClickBackToHP = useHandleClickBackToHP()
-
+  
   return (
     <React.Fragment>
       <div className="body-hp">
         <h1>Pagina non trovata!</h1>
-        <h2>{message}: {errorStatus}</h2>
-        {/* <button className='btn-hp' onClick={handleClickBackToHP}>
-          Ritorna alla Homepage
-        </button> */}
-        <Button onClick={handleClickBackToHP} message={'Ritorna alla Homepage'}/>
+        <h2>Page not found: 404</h2>
+        <Button 
+          message={'Ritorna alla Homepage'}
+          onClick={handleClickBackToHP} 
+        />
       </div>
     </React.Fragment>
   )
