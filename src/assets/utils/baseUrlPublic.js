@@ -1,0 +1,1 @@
+export const getPublicUrl = () => process.env.PUBLIC_URL || '';

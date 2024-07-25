@@ -1,0 +1,17 @@
+// import { AFrameBody } from './AframeRender'
+// import { OScene } from './OScene'
+// import { TScene } from './TScene'
+// import { ARFrameBody } from './ARFrameRender'
+// import Homepage from '../pages/Homepage'
+// import PageNF from '../pages/PageNF'
+// import routes from './router/routes'
+
+{/* <Route path='/' element={<Homepage />} />
+<Route path='/scene1' element={<AFrameBody/>}/>
+<Route path='/scene2' element={<OScene/>}/>
+<Route path='/scene3' element={<TScene/>}/>
+<Route path='/scene4' element={<ARFrameBody/>}/>
+<Route path='*' element={<PageNF/>}/> */}
+{/* {routes.map((route, index) => (
+  <Route key={index} path={route.path} element={route.element} />
+))} */}

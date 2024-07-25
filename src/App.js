@@ -1,22 +1,8 @@
 import './App.css';
-import { AFrameBody } from './components/AframeRender';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import { AppRouter } from './components/router/RouterRender';
 
 function App() {
-  return (
-    <div>      
-      <div className='nav'>
-        <Navbar/>
-      </div>
-      <div className='body'>
-        <AFrameBody/>
-      </div>
-      <div>
-        <Footer/>
-      </div>
-    </div>
-  );
+  return <AppRouter/>
 }
 
 export default App;

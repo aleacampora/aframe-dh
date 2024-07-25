@@ -1,13 +1,10 @@
 import 'aframe'
-import bodyImg from '../assets/background360.jpg'
-import myModel3D from '../assets/models/myModel.glb'
 
-export const AFrameBody = () => {
+export const AFrameBody = ({myModel3D, bodyImg}) => {
   return (
     <a-scene>
       {/* Assets */}
       <a-assets>
-        <img id="background" src={bodyImg} alt="Background" />
         <a-asset-item id="my-model" src={myModel3D}></a-asset-item>
       </a-assets>
       <a-sky src={bodyImg}></a-sky>
